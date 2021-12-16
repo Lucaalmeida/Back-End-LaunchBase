@@ -4,6 +4,8 @@ const server = express()
 const nunjucks = require("nunjucks")
 
 
+server.use (express.static('public'))
+
 server.set("view engine", "html")
 
 nunjucks.configure("views",{
@@ -12,7 +14,7 @@ nunjucks.configure("views",{
 
 
 server.get("/", function(req, res){
-    return res.send("rota encontrada, não precisamos usar dirname nesse caso ")
+    return res.render("index")
 })
 
 
