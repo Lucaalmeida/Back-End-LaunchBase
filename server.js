@@ -8,7 +8,7 @@ server.use (express.static('public'))
 
 server.set("view engine", "html")
 
-nunjucks.configure("views",{
+nunjucks.configure(__dirname + "/views",{
     express:server
 })
 
@@ -25,7 +25,5 @@ server.get("/portifolio", function(req, res){
 
 
 server.listen(4000, function ( ){ 
-
     console.log("server is running")
-
 })
