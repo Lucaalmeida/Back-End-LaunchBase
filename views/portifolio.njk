@@ -16,84 +16,26 @@
         </div>
 
         <section class="cards">
+
+
+        {% for item in items %}
             
-            <div class="card" id="X6klpqubyBw">       
+            <div class="card" id="{{item.id}}">       
                 <div class="card_image-container">
-                    <img src="https://img.youtube.com/vi/X6klpqubyBw/maxresdefault.jpg" alt="4 maneiras de criar objetos em js ">
+                    <img src="https://img.youtube.com/vi/{{item.id}}/maxresdefault.jpg" alt="4 maneiras de criar objetos em js ">
                 </div>
                 <div class="card_content">
-                    <p> 4 maneiras de criar objetos ...</p>
+                    <p> {{item.title}}</p>
                 </div>
+
                 <div class="card_info">
-                    <p class="min">57 min</p>
-                    <p class="card_price">Free</p>
-                </div>      
+                    <p class="min">{{item.duration}}</p>
+                    <p class="card_price">{{item.price}}</p>
+                </div>       
         </div>
 
-        <div class="card" id="RF0nS-EM2Ag">       
-            <div class="card_image-container">
-                <img src="https://img.youtube.com/vi/RF0nS-EM2Ag/maxresdefault.jpg" alt="4 maneiras de criar objetos em js ">
-            </div>
-            <div class="card_content">
-                <p> O console além do .log() </p>
-            </div>
-            <div class="card_info">
-                <p  class="min"> 58 min</p>
-                <p class="card_price">Free</p>
-            </div>      
-    </div>
+        {% endfor%}
 
-    <div class="card" id="-f5E5Lhocuo">       
-        <div class="card_image-container">
-            <img src="https://img.youtube.com/vi/-f5E5Lhocuo/maxresdefault.jpg" alt="4 maneiras de criar objetos em js ">
-        </div>
-        <div class="card_content">
-            <p> 10 funções Array em ... </p>
-        </div>
-        <div class="card_info">
-            <p  class="min">57 min</p>
-            <p class="card_price">Free</p>
-        </div>      
-    </div>
-
-    <div class="card" id="klgtCYfpYyU">       
-        <div class="card_image-container">
-            <img src="https://img.youtube.com/vi/klgtCYfpYyU/maxresdefault.jpg" alt="4 maneiras de criar objetos em js ">
-        </div>
-        <div class="card_content">
-            <p> 05 escopos no Javascript </p>
-        </div>
-        <div class="card_info">
-            <p  class="min">25 min</p>
-            <p class="card_price">Free</p>
-        </div>      
-    </div>
-
-    <div class="card" id="q2zA4OOjx2g">       
-        <div class="card_image-container">
-            <img src="https://img.youtube.com/vi/q2zA4OOjx2g/maxresdefault.jpg" alt="4 maneiras de criar objetos em js ">
-        </div>
-        <div class="card_content">
-            <p> (QUASE) tudo sobre ...</p>
-        </div>
-        <div class="card_info">
-            <p  class="min">37 min</p>
-            <p class="card_price">Free</p>
-        </div>      
-    </div>
-
-    <div class="card" id="vuHa90tFojc">       
-        <div class="card_image-container">
-            <img src="https://img.youtube.com/vi/vuHa90tFojc/maxresdefault.jpg" alt="4 maneiras de criar objetos em js ">
-        </div>
-        <div class="card_content">
-            <p> Layout de SPEECH ... </p>
-        </div>
-        <div class="card_info">
-            <p  class="min">22 min</p>
-            <p class="card_price">Free</p>
-        </div>      
-    </div>
 
         </section>
 
