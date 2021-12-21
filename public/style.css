@@ -131,6 +131,7 @@ header {
 
 .card { 
     background-color: #5554f7;
+    display: grid;
 
 }
 
@@ -147,6 +148,7 @@ header {
 .card_info {
     display: grid;
     grid-template-columns: 1fr  1fr;
+    align-items: center;
 }
 
 .card_info .min { 
