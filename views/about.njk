@@ -12,18 +12,21 @@
 
     <div id="wrapper" >
 
-        <img src="https://images.unsplash.com/photo-1525373698358-041e3a460346?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="">
-        <h1>Ricardo Lucas</h1>
-        <h2>Aluno - Rocketseat </h2>
-        <p>Estudante, focado em aprender e trazer o melhor para o mercado de programação. Estudante da <a href="https://rocketseat.com.br/" target="_blanck">rocketseat</a>  </p>
+        <img src="{{about.avatar_url}}" alt="">
+        <h1>{{about.name}}</h1>
+        <h2> {{about.role}}</h2>
+        <p> {{about.description}} </p>
   
     </div>
 
-    <div id="links-footer" class="links ">
+    <div id="links-footer" class="links">
 
-        <a href="https://github.com/Lucaalmeida" target="_black">Github </a>
-        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D"target="_black">Twtter</a>
-        <a href="https://www.linkedin.com/in/ricardo-lucas-1b66011ba/" target="_black">linkedin</a>
+
+         {% for link in about.links %}
+
+        <a href="{{link.url}}" target="_black">{{link.name}}</a>
+       
+        {% endfor %}
 
     </div>
     
