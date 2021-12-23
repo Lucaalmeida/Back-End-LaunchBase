@@ -132,6 +132,7 @@ header {
 .card { 
     background-color: #5554f7;
     display: grid;
+    cursor: pointer;
 
 }
 
@@ -220,3 +221,23 @@ iframe {
 
 
 /* apenas uma observação sobre o projeto */
+
+
+
+
+/*===== FEATURED ====*/
+
+.featured-wrapper.card_image-container{ 
+    position: relative; 
+}
+
+.featured { 
+
+    position: absolute;
+    background-color: #f7d05f;
+    color: #111;
+    padding: 2px 8px ;
+    right: 5px;
+    border-radius: 16px;
+    top:  -10px;
+}

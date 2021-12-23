@@ -6,14 +6,14 @@ const server = express()
 
 const videos = require("./data")
 
-
 server.use (express.static('public'))
 
 server.set("view engine", "njk")
 
 nunjucks.configure(__dirname + "/views",{
     express:server,
-    autoescape:false
+    autoescape:false,
+    noCache:true
 })
 
 
