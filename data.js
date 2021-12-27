@@ -24,7 +24,7 @@ module.exports = [
         title:'05 escopos no Javascript',
         duration:'25 min',
         price:'Free',
-        featured:true
+         featured:true
     },
     { 
         id:'q2zA4OOjx2g', 

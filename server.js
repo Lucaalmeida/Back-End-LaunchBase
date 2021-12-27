@@ -38,6 +38,29 @@ server.get("/", function(req, res){
     return res.render("about", { about})
 })
 
+
+
+server.get("/video", function (req, res ){
+        const id = req.query.id
+
+        const video = videos.find(function(video){
+
+            if(video.id == id ){
+                return true
+            }   
+        
+        })
+
+        if(!video){
+            return res.send ("video not found ")
+        }
+        
+        return res.render('video', {  item: video })
+
+})
+
+
+
 server.get("/portifolio", function(req, res){
 
     return res.render("portifolio", { items : videos})
